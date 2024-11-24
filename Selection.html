@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Selection.css">
+  <title>Selection</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Here is our Selection of movies</h2>
+  </header>
+  <section class="container">
+   <div class="slider-wrapper">
+    <div class="slider">
+<img id="slide-1" src="Film1.jfif" alt="Poster voor de film Anora" onclick= "showAlert('Anora')">
+<img id="slide-2" src="Film 2.jfif" alt="Poster voor de film The Substance" onclick= "showAlert('The Substance')">
+<img id="slide-3" src="Film3.jfif" alt="Poster voor de film Monkey man"onclick= "showAlert('Monkey man')">
+<img id="slide-4" src="Film4.jfif" alt="Poster voor de film The Wild robot"onclick= "showAlert('The Wild Robot')">
+<img id="slide-5" src="Film5.jfif" alt="Poster voor de film Dune Part 2"onclick= "showAlert('Dune Part 2')
+   </div>
+   <div class="slider-nav">
+    <a href="#slide-1"></a>
+    <a href="#slide-2"></a>
+    <a href="#slide-3"></a>                                                                                           
+    <a href="#slide-4"></a>
+    <a href="#slide-5"></a>
+    </div>
+   </div>
+  </section>
+  <button type="button" class="Button" onclick="window.location.href='Ranking.html';">Start Ranking</button>
+<script>
+  function showAlert(movieName) {
+    alert('You clicked on ' + movieName);}
+</script>
+  
+</body>
+</html>

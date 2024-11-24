@@ -1,0 +1,92 @@
+h2{
+  font-size: 2rem; 
+    text-align: center; 
+    color: white; 
+    margin-top: 20px;
+    z-index: 10; 
+    position: relative; 
+    font-family:'Playfair Display', serif;
+}
+body{
+min-height: 100vh;
+background: url(info-series4.jpg);
+background-size: cover;
+background-position: center;
+}
+.section{
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.slider-wrapper{
+  position: relative;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 1/1 ;
+  overflow-x: auto;
+  scroll-snap-type: x  mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem rgb(36, 33, 33) ;
+  border-radius: 0.5rem;
+  transition: opacity 0.5s ease-in-out;
+} 
+.slider img{
+flex: 1 0 100%  ;
+scroll-snap-align: start;
+object-fit: cover;
+}
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+   opacity: 1;
+}
+.header{
+  position: relative;
+  top: 20px;
+}
+.Button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  float: right;
+
+}
+.Button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
+
+        

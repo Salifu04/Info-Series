@@ -1,0 +1,137 @@
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .Contact {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-form,
+  .contact-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    flex: 2;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #2c3e50;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  
+  .submit-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2ecc71;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .contact-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-form,
+    .contact-info {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
