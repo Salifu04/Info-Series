@@ -22,9 +22,10 @@
   <input type="e-mail" name="email" placeholder="Your Email">
 </div>
 <div class="form-g">
-  <textarea name="message" placeholder="Your Message"></textarea>
+  <textarea id ="message" placeholder="Your Message"></textarea>
+  <p>Remaining characters: <span id="char-count">500</span></p>
 </div>
-<button class="submit-btn">Submit</button>
+<button>Submit</button>
 </form>
 </div>
 <div class="contact-info">
@@ -35,5 +36,16 @@
 </div>
   </div>
   </section>
+
+  <script>
+    let messageField = document.getElementById('message');
+    let charCount = document.getElementById('char-count');
+    let maxLength = 500;
+
+    messageField.addEventListener('input', function() {
+  let over = maxLength - messageField.value.length;
+  charCount.textContent = over;
+    });
+    </script>
 </body>
 </html>
